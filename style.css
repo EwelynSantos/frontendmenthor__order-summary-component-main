@@ -1,137 +1,159 @@
-:root{
-    /* ### Primary */
-    --pale-blue: hsl(225, 100%, 94%);
-    --bright-blue: hsl(245, 75%, 52%);
-    /* ### Neutral */
-   --very-pale-blue: hsl(225, 100%, 98%);
-   --vesaturated-blue: hsl(224, 23%, 55%);
-   --vark-blue: hsl(223, 47%, 23%);
+:root {
+  /* ### Primary */
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  /* ### Neutral */
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --vesaturated-blue: hsl(224, 23%, 55%);
+  --vark-blue: hsl(223, 47%, 23%);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
-*{
-    font-family: 'Red Hat Display', sans-serif;
+* {
+  font-family: 'Red Hat Display', sans-serif;
 }
 
-body{
-    background-image: url(images/pattern-background-desktop.svg);
-    background-repeat: no-repeat;
+body {
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
 }
 
-#principal{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  margin-top: 50px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+#conteudo2 {
+  margin-top: 0%;
+  background-color: #fff;
+  width: 430px;
+  height: 480px;
+  border-radius: 0px 0px 20px 20px;
+  padding: 10px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.392);
+}
+
+#conteudo2>h1 {
+  margin-top: 50px;
+  text-align: center;
+  color: var(--vark-blue);
+}
+
+#conteudo2>p {
+  color: var(--vesaturated-blue);
+  text-align: center;
+  padding: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 
-img{
-    margin-top: 50px;
-    border-radius: 20px 20px 0px 0px;
-}
+#plano {
+  background-color: var(--very-pale-blue);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 76%;
+  border-radius: 15px;
+  margin: 0 auto;
 
-#conteudo2{
-    margin-top: 0%;
-    background-color: #fff;
-    width: 430px;
-    height: 480px;
-    border-radius: 0px 0px 20px 20px;
-    padding: 10px;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.392);
-}
-
-#conteudo2 > h1{
-    margin-top: 50px;
-    text-align: center;
-    color: var(--vark-blue);
-}
-
-#conteudo2 > p{
-    color: var(--vesaturated-blue);
-    text-align: center;
-    padding: 10px;
-    margin-left: 25px;
-    margin-right: 25px;
 }
 
 
-#plano{
-    display: flex;
-    gap:30px
+#plano>a {
+  text-decoration: none;
+  text-decoration: underline;
+  color: var(--bright-blue);
+  font-weight: bolder;
 }
 
-#plano > svg{
-    margin-top: 30px;
-    margin-left: 50px;
+#plano>a:hover {
+  color: var(--vesaturated-blue);
+  transition: 0.3s;
 }
 
-#plano > a{
-    margin-top: 38px;
-    margin-left: 50px;
-    text-decoration: none;
-    text-decoration: underline;
-    color: var(--bright-blue);
-    font-weight: bolder;
+#icone {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-#plano > a:hover{
-    color: var(--vesaturated-blue);
-    transition: 0.3s;
+#anual {
+  font-weight: bold;
+  color: var(--vark-blue);
+  margin-bottom: 5px;
 }
 
-#anual{
-    font-weight: bold;
-    color: var(--vark-blue);
-    margin-top: 30px;
-    margin-bottom: 5px;
+#preço {
+  margin-top: 0px;
+  color: var(--vesaturated-blue);
 }
 
-#preço{
-    margin-top: 0px;
-    color: var(--vesaturated-blue);
+#botao-pagamento {
+  display: flex;
 }
 
-#botao-pagamento{
-    display: flex;
+#botao-pagamento>button {
+  background-color: var(--bright-blue);
+  color: #fff;
+  border: none;
+  border-radius: 9px;
+  padding: 15px;
+  width: 350px;
+  margin-left: 55px;
+  margin-right: 55px;
+  margin-top: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.317);
 }
 
-#botao-pagamento > input{
-   background-color: var(--bright-blue);
-   color: #fff;
-   border: none;
-   border-radius: 9px;
-   padding: 15px;
-   width: 350px;
-   margin-left: 55px;
-   margin-right: 55px;
-   margin-top: 50px;
-   font-weight: bold;
-   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.317);
+#botao-pagamento>button:hover {
+  background-color: var(--vesaturated-blue);
+  color: var(--vark-blue);
+  transition: 0.3s;
 }
 
-#botao-pagamento > input:hover{
-    background-color: var(--vesaturated-blue);
-    color: var(--vark-blue);
-    transition: 0.3s;
+
+#cancelar>p {
+  margin-top: 40px;
+  text-align: center;
+  color: var(--vesaturated-blue);
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+#cancelar>p:hover {
+  color: var(--vark-blue);
+  transition: 0.3s;
+}
+
+footer {
+  margin-top: 30px;
+  background-color: var(--pale-blue);
+  padding: 10px;
+}
+
+@media (max-width:500px) {
+  #principal{
+    width: 80%;
+    margin: 0 auto;
   }
-
-
-#cancelar > p{
-    margin-top: 40px;
-    margin-left: 160px;
-    margin-right: 150px;
-    color: var(--vesaturated-blue);
-    font-weight: bolder;
+  img{
+    width: 100%;
   }
-
-  #cancelar >p:hover{
-    color: var(--vark-blue);
-    transition: 0.3s;
+  #conteudo2{
+    width: 100%;
+    padding: 0px;
   }
- 
-footer{
-    margin-top: 30px;
-    background-color:var(--pale-blue);
-    padding: 10px;
+  #plano{
+    width: 90%;
+  }
 }
